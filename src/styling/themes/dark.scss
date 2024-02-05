@@ -1,0 +1,16 @@
+$dark-theme: (
+  Toggle: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%)),
+  BG: hsl(230, 17%, 14%),
+  Top-BG-Pattern: hsl(232, 19%, 15%),
+  Card-BG: hsl(228, 28%, 20%),
+  Text: hsl(228, 34%, 66%),
+  White: hsl(0, 0%, 100%),
+);
+
+.body-bg-dark {
+  background: map-get($dark-theme, BG);
+}
+
+.bg-top-dark {
+  background: map-get($dark-theme, Top-BG-Pattern);
+}

@@ -23,4 +23,46 @@ $primary-colors: (
 }
 
 .App {
+  .top-socials-container {
+    display: flex;
+    justify-content: space-between;
+
+    .big-card-dark,
+    .big-card-light {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-radius: 0.25rem;
+      overflow: hidden;
+      width: 10rem;
+    }
+  }
+}
+
+.facebook,
+.twitter,
+.instagram,
+.youtube {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.facebook {
+  border: 1px solid map-get($primary-colors, Facebook);
+}
+
+.twitter {
+  border: 1px solid map-get($primary-colors, Twitter);
+}
+
+.instagram {
+  border-width: 1px;
+  border-style: solid;
+  border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
+}
+
+.youtube {
+  border: 1px solid map-get($primary-colors, YouTube);
 }

@@ -1,0 +1,48 @@
+import { Facebook, Twitter, Instagram, YouTube, Up, Down } from "../../assets/export";
+
+export const props = [
+  {
+    lineClass: "facebook",
+    icon: Facebook,
+    iconName: "Facebook",
+    username: "nathanf",
+    followers: "1987",
+    followerType: "followers",
+    statIcon: Up,
+    statIconName: "UP icon",
+    statNumber: "12",
+  },
+  {
+    lineClass: "twitter",
+    icon: Twitter,
+    iconName: "Twitter",
+    userName: "nathanf",
+    followers: "1044",
+    followerType: "followers",
+    statIcon: Up,
+    statIconName: "Up",
+    statNumber: "99",
+  },
+  {
+    lineClass: "instagram",
+    icon: Instagram,
+    iconName: "Instagram",
+    userName: "realnathanf",
+    followers: "11k",
+    followerType: "followers",
+    statIcon: Up,
+    statIconName: "Up",
+    statNumber: "1099",
+  },
+  {
+    lineClass: "youtube",
+    icon: YouTube,
+    iconName: "YouTube",
+    userName: "Nathan F.",
+    followers: "8239",
+    followerType: "subscribers",
+    statIcon: Down,
+    statIconName: "Down",
+    statNumber: "144",
+  },
+];

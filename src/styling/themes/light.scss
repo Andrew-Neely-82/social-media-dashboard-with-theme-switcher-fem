@@ -13,4 +13,6 @@ $light-theme: (
 
 .bg-top-light {
   background: map-get($light-theme, Top-BG-Pattern);
+  z-index: -100;
 }
+

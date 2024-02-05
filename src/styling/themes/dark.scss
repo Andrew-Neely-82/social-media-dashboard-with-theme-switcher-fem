@@ -13,4 +13,9 @@ $dark-theme: (
 
 .bg-top-dark {
   background: map-get($dark-theme, Top-BG-Pattern);
+  z-index: -100;
+}
+
+.big-card-dark {
+  background: map-get($dark-theme, Card-BG);
 }

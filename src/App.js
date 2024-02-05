@@ -1,4 +1,5 @@
 import { DarkModeContext, darkBg, lightBg, themeFunc } from "./context/DarkModeContext";
+import { Top } from "./components/export";
 import { useContext } from "react";
 import "./styling/App.scss";
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div className={`App App-${themeClass}-bg`}>
       <div className={`bg-top-${themeClass}`} />
+      <Top />
     </div>
   );
 }

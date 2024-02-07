@@ -1,5 +1,9 @@
 import { Facebook, Twitter, Instagram, YouTube, Up, Down } from "../../assets/export";
 
+export const followerCount = {
+  count: "23,004",
+};
+
 export const props = [
   {
     lineClass: "facebook",
@@ -11,38 +15,42 @@ export const props = [
     statIcon: Up,
     statIconName: "UP icon",
     statNumber: "12",
+    statColor: "green-text",
   },
   {
     lineClass: "twitter",
     icon: Twitter,
     iconName: "Twitter",
-    userName: "nathanf",
+    username: "nathanf",
     followers: "1044",
     followerType: "followers",
     statIcon: Up,
-    statIconName: "Up",
+    statIconName: "UP icon",
     statNumber: "99",
+    statColor: "green-text",
   },
   {
     lineClass: "instagram",
     icon: Instagram,
     iconName: "Instagram",
-    userName: "realnathanf",
+    username: "realnathanf",
     followers: "11k",
     followerType: "followers",
     statIcon: Up,
-    statIconName: "Up",
+    statIconName: "UP icon",
     statNumber: "1099",
+    statColor: "green-text",
   },
   {
     lineClass: "youtube",
     icon: YouTube,
     iconName: "YouTube",
-    userName: "Nathan F.",
+    username: "Nathan F.",
     followers: "8239",
     followerType: "subscribers",
     statIcon: Down,
-    statIconName: "Down",
+    statIconName: "Down Icon",
     statNumber: "144",
+    statColor: "red-text",
   },
 ];

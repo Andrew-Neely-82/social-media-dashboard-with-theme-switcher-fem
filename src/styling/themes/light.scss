@@ -4,7 +4,7 @@ $light-theme: (
   Top-BG-Pattern: hsl(225, 100%, 98%),
   Card-BG: hsl(227, 47%, 96%),
   Dark-Grayish-Blue: hsl(228, 12%, 44%),
-  Very-Dark-Blue: hsl(230, 17%, 14%),
+  Text: hsl(230, 17%, 14%),
 );
 
 .body-bg-light {
@@ -16,3 +16,6 @@ $light-theme: (
   z-index: -100;
 }
 
+.dark-text {
+  color: map-get($light-theme, Text);
+}

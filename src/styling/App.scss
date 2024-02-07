@@ -33,12 +33,50 @@ $primary-colors: (
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      border-radius: 0.25rem;
-      overflow: hidden;
+      align-items: center;
       width: 10rem;
+      color: white;
+      border-radius: 0.25rem;
+      padding: 2rem;
+      padding-top: calc(2rem + 2px);
+      overflow: hidden;
+
+      .platform {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5rem;
+      }
+
+      .followers-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h3 {
+          margin-block: 1rem;
+          font-size: 3rem;
+        }
+
+        .follower-type {
+          text-transform: uppercase;
+          letter-spacing: 0.25rem;
+          color: map-get($primary-colors, white);
+        }
+      }
+
+      .stats-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.25rem;
+        width: 100%;
+        font-weight: bold;
+      }
     }
   }
 }
+
+// * borders
 
 .facebook,
 .twitter,
@@ -46,23 +84,40 @@ $primary-colors: (
 .youtube {
   position: absolute;
   top: 0;
+  left: 0;
   width: 100%;
+  border-width: 2px;
+  border-style: solid;
 }
 
 .facebook {
-  border: 1px solid map-get($primary-colors, Facebook);
+  border-color: map-get($primary-colors, Facebook);
 }
 
 .twitter {
-  border: 1px solid map-get($primary-colors, Twitter);
+  border-color: map-get($primary-colors, Twitter);
 }
 
 .instagram {
-  border-width: 1px;
-  border-style: solid;
   border-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%)) 1;
 }
 
 .youtube {
-  border: 1px solid map-get($primary-colors, YouTube);
+  border-color: map-get($primary-colors, YouTube);
 }
+
+// * Text colors
+
+.green,
+.red {
+  font-weight: 600;
+}
+
+.green-text {
+  color: map-get($primary-colors, Lime);
+}
+
+.red-text {
+  color: map-get($primary-colors, Red);
+}
+

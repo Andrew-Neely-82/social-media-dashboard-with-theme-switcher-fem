@@ -1,4 +1,4 @@
-const BigCard = ({ className, lineClass, icon, iconName, username, followers, followerType, statIcon, statIconName, statNumber }) => {
+const BigCard = ({ className, lineClass, icon, iconName, username, followers, followerType, statIcon, statIconName, statNumber, statColor }) => {
   return (
     <div className={`big-card-${className}`}>
       <div className={lineClass} />
@@ -7,12 +7,12 @@ const BigCard = ({ className, lineClass, icon, iconName, username, followers, fo
         <span>@{username}</span>
       </div>
       <div className="followers-container">
-        <h1>{followers}</h1>
-        <span>{followerType}</span>
+        <h3>{followers}</h3>
+        <span className="follower-type">{followerType}</span>
       </div>
       <div className="stats-container">
         <img src={statIcon} alt={statIconName} />
-        <span className="stat-number">{statNumber} Today</span>
+        <span className={`stat-number ${statColor}`}>{statNumber} Today</span>
       </div>
     </div>
   );
